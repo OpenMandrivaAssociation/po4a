@@ -14,6 +14,7 @@ BuildRequires:	perl(Text::WrapI18N)
 BuildRequires:	gettext
 Requires:	gettext
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 The po4a (po for anything) project goal is to ease translations (and
