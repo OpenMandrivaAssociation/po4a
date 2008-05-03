@@ -51,5 +51,6 @@ rm -rf %{buildroot}
 %{_mandir}/man7/po4a.7*
 %{_mandir}/*/man1/po4a*.1p*
 %{_mandir}/*/man1/msguntypot.1*
+%{_mandir}/*/man1/po4aman-display-po.1.*
 %{_mandir}/*/man3/Locale::Po4a::*.3pm*
 %{_mandir}/*/man7/po4a.7*
