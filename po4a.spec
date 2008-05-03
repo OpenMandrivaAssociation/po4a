@@ -1,9 +1,9 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.32
+Version:	0.33.3
 Release:	%mkrel 1
 Group:		System/Internationalization
-License:	GPL
+License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
 Source0:	http://alioth.debian.org/frs/download.php/2108/%{name}-%{version}.tar.gz
 BuildRequires:	perl(Locale::gettext) >= 1.01
