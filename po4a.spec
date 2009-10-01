@@ -1,7 +1,7 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.35
-Release:	%mkrel 2
+Version:	0.36.4
+Release:	%mkrel 1
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
@@ -22,8 +22,7 @@ more interestingly, the maintenance of translations) using gettext
 tools on areas where they were not expected like documentation.
 
 %prep
-
-%setup -q
+%setup -q -n %{name}-v%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
@@ -45,12 +44,10 @@ rm -rf %{buildroot}
 %{_bindir}/po4a*
 %{_bindir}/msguntypot
 %{perl_vendorlib}/Locale/Po4a
-%{_mandir}/man1/po4a*.1*
-%{_mandir}/man1/msguntypot.1*
-%{_mandir}/man3/Locale::Po4a::*.3pm*
-%{_mandir}/man7/po4a.7*
-%{_mandir}/*/man1/po4a*.1p*
-%{_mandir}/*/man1/msguntypot.1*
-%{_mandir}/*/man1/po4aman-display-po.1.*
-%{_mandir}/*/man3/Locale::Po4a::*.3pm*
-%{_mandir}/*/man7/po4a.7*
+%{_mandir}/man?/*
+%lang(ca) %{_mandir}/ca/man?/*
+%lang(es) %{_mandir}/es/man?/*
+%lang(fr) %{_mandir}/fr/man?/*
+%lang(it) %{_mandir}/it/man?/*
+%lang(ja) %{_mandir}/ja/man?/*
+%lang(pl) %{_mandir}/pl/man?/*
