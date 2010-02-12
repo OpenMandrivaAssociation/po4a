@@ -22,7 +22,7 @@ more interestingly, the maintenance of translations) using gettext
 tools on areas where they were not expected like documentation.
 
 %prep
-%setup -q -n %{name}-v%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
