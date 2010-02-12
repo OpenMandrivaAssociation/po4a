@@ -45,9 +45,3 @@ rm -rf %{buildroot}
 %{_bindir}/msguntypot
 %{perl_vendorlib}/Locale/Po4a
 %{_mandir}/man?/*
-%lang(ca) %{_mandir}/ca/man?/*
-%lang(es) %{_mandir}/es/man?/*
-%lang(fr) %{_mandir}/fr/man?/*
-%lang(it) %{_mandir}/it/man?/*
-%lang(ja) %{_mandir}/ja/man?/*
-%lang(pl) %{_mandir}/pl/man?/*
