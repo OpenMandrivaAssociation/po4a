@@ -1,7 +1,7 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
 Version:	0.39
-Release:	%mkrel 2
+Release:	3
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
@@ -14,7 +14,6 @@ BuildRequires:	perl(Text::WrapI18N)
 BuildRequires:	gettext
 Requires:	gettext
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 The po4a (po for anything) project goal is to ease translations (and
@@ -25,23 +24,16 @@ tools on areas where they were not expected like documentation.
 %setup -q -n %{name}-%{version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
+perl Build.PL installdirs=vendor
 ./Build
 
 %install
-rm -rf %{buildroot}
-
 ./Build install destdir=%{buildroot}
 
-%find_lang %{name}
-
-%clean
-rm -rf %{buildroot}
-
-%files -f %{name}.lang
-%defattr(-,root,root,-)
+%files
 %doc README* COPYING TODO
 %{_bindir}/po4a*
 %{_bindir}/msguntypot
 %{perl_vendorlib}/Locale/Po4a
 %{_mandir}/man?/*
+
