@@ -13,6 +13,7 @@ BuildRequires:	perl-SGMLSpm
 #BuildRequires:	perl(SGMLS) >= 1.03ii
 BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl(Text::WrapI18N)
+BuildRequires:	perl(Unicode::GCString)
 BuildRequires:	perl-devel
 BuildRequires:	xsltproc
 BuildRequires:	gettext
