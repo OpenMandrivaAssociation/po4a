@@ -11,6 +11,7 @@ BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(SGMLS) >= 1.03ii
 BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl(Text::WrapI18N)
+BuildRequires:	xsltproc
 BuildRequires:	gettext
 Requires:	gettext
 BuildArch:	noarch
