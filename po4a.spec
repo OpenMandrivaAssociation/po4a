@@ -15,7 +15,7 @@ BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl(Text::WrapI18N)
 BuildRequires:	perl(Unicode::GCString)
 BuildRequires:	perl-devel
-BuildRequires:	xsltproc
+BuildRequires:	xsltproc docbook-style-xsl
 BuildRequires:	gettext
 Requires:	gettext
 BuildArch:	noarch
