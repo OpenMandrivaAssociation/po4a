@@ -1,7 +1,7 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.39
-Release:	3
+Version:	0.44
+Release:	1
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
@@ -21,7 +21,7 @@ more interestingly, the maintenance of translations) using gettext
 tools on areas where they were not expected like documentation.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 perl Build.PL installdirs=vendor
@@ -30,10 +30,12 @@ perl Build.PL installdirs=vendor
 %install
 ./Build install destdir=%{buildroot}
 
-%files
+%find_lang %{name} --with-man --all-name
+
+%files -f %{name}.lang
 %doc README* COPYING TODO
 %{_bindir}/po4a*
 %{_bindir}/msguntypot
 %{perl_vendorlib}/Locale/Po4a
-%{_mandir}/man?/*
+%{_mandir}/man[137]/*.[137]*
 
