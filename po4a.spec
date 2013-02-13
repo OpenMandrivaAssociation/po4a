@@ -8,7 +8,9 @@ URL:		http://alioth.debian.org/projects/po4a/
 Source0:	http://alioth.debian.org/frs/download.php/2108/%{name}-%{version}.tar.gz
 BuildRequires:	perl(Locale::gettext) >= 1.01
 BuildRequires:	perl(Module::Build)
-BuildRequires:	perl(SGMLS) >= 1.03ii
+BuildRequires:	perl-SGMLSpm
+# FIXME: duplicated in texlive-latex-web-companion
+#BuildRequires:	perl(SGMLS) >= 1.03ii
 BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl(Text::WrapI18N)
 BuildRequires:	perl-devel
