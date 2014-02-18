@@ -1,7 +1,7 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.44
-Release:	5
+Version:	0.45
+Release:	1
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
@@ -42,5 +42,5 @@ perl Build.PL installdirs=vendor
 %{_bindir}/po4a*
 %{_bindir}/msguntypot
 %{perl_vendorlib}/Locale/Po4a
-%{_mandir}/man[137]/*.[137]*
+%{_mandir}/man[1375]/*.[1375]*
 
