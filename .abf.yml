@@ -1,4 +1,5 @@
 removed_sources:
   po4a-0.44.tar.gz: 9fe3ba724287bc97b59c5b756f7d54e57da7db0d
-sources:
   po4a-0.45.tar.gz: c38c32d96c2a25f3a6cc5d8afb1fbdde362b7c19
+sources:
+  po4a-0.47.tar.gz: 70d3a2cec8f75c2196415bb1d21ccdd5c87002bc

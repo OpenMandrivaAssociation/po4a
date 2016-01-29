@@ -1,7 +1,7 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.45
-Release:	5
+Version:	0.47
+Release:	1
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
