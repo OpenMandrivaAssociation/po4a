@@ -6,6 +6,7 @@ Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://alioth.debian.org/projects/po4a/
 Source0:	http://alioth.debian.org/frs/download.php/2108/%{name}-%{version}.tar.gz
+BuildRequires:	perl(Po4aBuilder)
 BuildRequires:	perl(Locale::gettext) >= 1.01
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl-SGMLSpm
