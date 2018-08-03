@@ -14,6 +14,7 @@ BuildRequires:	perl-SGMLSpm
 BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl(Text::WrapI18N)
 BuildRequires:	perl(Unicode::GCString)
+BuildRequires:	perl(YAML::Tiny)
 BuildRequires:	perl-devel
 BuildRequires:	xsltproc docbook-style-xsl
 BuildRequires:	gettext
@@ -29,6 +30,7 @@ tools on areas where they were not expected like documentation.
 %setup -q
 
 %build
+export PERL5LIB=`pwd`:$PERL5LIB
 perl Build.PL installdirs=vendor
 ./Build
 
