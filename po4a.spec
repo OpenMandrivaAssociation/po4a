@@ -15,6 +15,7 @@ BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl(Text::WrapI18N)
 BuildRequires:	perl(Unicode::GCString)
 BuildRequires:	perl(YAML::Tiny)
+BuildRequires:	perl(Pod::Parser)
 BuildRequires:	perl-devel
 BuildRequires:	xsltproc docbook-style-xsl
 BuildRequires:	gettext
