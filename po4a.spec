@@ -1,7 +1,7 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
 Version:	0.54
-Release:	1
+Release:	2
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://po4a.org/
