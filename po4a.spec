@@ -1,11 +1,11 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.54
-Release:	2
+Version:	0.55
+Release:	1
 Group:		System/Internationalization
 License:	GPLv2+
 URL:		http://po4a.org/
-Source0:	https://github.com/mquinson/po4a/archive/v%{version}.tar.gz
+Source0:	https://github.com/mquinson/po4a/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	perl(Locale::gettext) >= 1.01
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl-SGMLSpm
