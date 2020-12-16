@@ -1,6 +1,6 @@
 Summary:	A tool maintaining translations anywhere
 Name:		po4a
-Version:	0.61
+Version:	0.62
 Release:	1
 Group:		System/Internationalization
 License:	GPLv2+
