@@ -6,7 +6,7 @@ Group:		System/Internationalization
 License:	GPLv2+
 URL:		https://po4a.org/
 Source0:	https://github.com/mquinson/po4a/archive/v%{version}/%{name}-%{version}.tar.gz
-BuildRequires:	perl(Locale::gettext) >= 1.01
+BuildRequires:	perl(Locale::gettext)
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl-SGMLSpm
 # FIXME: duplicated in texlive-latex-web-companion
